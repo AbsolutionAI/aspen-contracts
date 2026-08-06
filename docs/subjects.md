@@ -24,3 +24,6 @@ Prefix: `aspen/edge/<node_id>/`
 | `command` | adapter → device |
 
 Bridged into fleet bus by edge RRM / MQTTEdgeAdapter (in-memory lab default).
+
+## Audit log (edge)
+RRM durable log is local JSONL (not a NATS subject). Events mirror propose_act / estop for offline forensics.
