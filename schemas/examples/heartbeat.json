@@ -1,0 +1,11 @@
+{
+  "id": "01HZXEXAMPLE",
+  "source": "aspen/agent/runtime",
+  "type": "aspen.agent.heartbeat.tick",
+  "time": "2026-08-05T19:00:00Z",
+  "specversion": "1.0",
+  "data": {
+    "agent": "example",
+    "status": "idle"
+  }
+}
