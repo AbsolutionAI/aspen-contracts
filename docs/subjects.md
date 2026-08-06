@@ -13,3 +13,14 @@
 | `aspen.safety.clear` | Clear e-stop (human) |
 
 Envelope: `schemas/event-envelope.schema.json`
+
+## MQTT edge topics (BEL-190)
+
+Prefix: `aspen/edge/<node_id>/`
+
+| Topic | Direction |
+|-------|-----------|
+| `sensor/<name>` | device → adapter |
+| `command` | adapter → device |
+
+Bridged into fleet bus by edge RRM / MQTTEdgeAdapter (in-memory lab default).
