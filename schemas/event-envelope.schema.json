@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://absolution.ai/schemas/event-envelope.json",
+  "title": "AspenEventEnvelope",
+  "type": "object",
+  "required": ["id", "source", "type", "time", "data"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "source": { "type": "string", "minLength": 1 },
+    "type": { "type": "string", "minLength": 1 },
+    "time": { "type": "string", "format": "date-time" },
+    "specversion": { "type": "string", "default": "1.0" },
+    "data": { "type": "object" }
+  },
+  "additionalProperties": true
+}
