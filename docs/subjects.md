@@ -27,3 +27,12 @@ Bridged into fleet bus by edge RRM / MQTTEdgeAdapter (in-memory lab default).
 
 ## Audit log (edge)
 RRM durable log is local JSONL (not a NATS subject). Events mirror propose_act / estop for offline forensics.
+
+## LangGraph worker (ADR-0005)
+| Subject | Purpose |
+|---------|---------|
+| `aspen.worker.langgraph.job` | Invoke named graph |
+| `aspen.worker.langgraph.result` | Graph summary |
+| `aspen.edge.<node>.propose_act` | **Only** act-shaped output from worker |
+
+Paperclip remains aspen-dev orchestration SoR — worker is cognitive plugin only.
