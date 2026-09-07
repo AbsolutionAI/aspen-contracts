@@ -1,0 +1,15 @@
+{
+  "id": "01HZXEXAMPLE",
+  "source": "aspen/authz/gate",
+  "type": "aspen.authz.gate.decision",
+  "time": "2026-08-29T14:00:00Z",
+  "specversion": "1.0",
+  "data": {
+    "request_id": "b7c3a1d0-9e8f-4a2b-9c1d-5e6f7a8b9c0d",
+    "decision": "grant",
+    "humans": ["operator-1@aspen.ops", "operator-2@aspen.ops"],
+    "capability": "aspen.fleet.mission.start",
+    "resource": "plant:chae-cell-01",
+    "note": "Approved for shift 2026-08-29"
+  }
+}
